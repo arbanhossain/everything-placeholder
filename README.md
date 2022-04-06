@@ -94,11 +94,11 @@ The project is aimed at assisting developers by giving them access to a wide var
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The resources are available via an API hosted at [https://arbanh.tech](https://arbanh.tech). For example, to generate an image of a desired width of 800px and a desired height of 600px, make a request to `https://arbanh.tech/images?width=800&height=600`. The following image is sent back as the response.
+The resources are available via an API hosted at [https://everything-placeholder.herokuapp.com](https://everything-placeholder.herokuapp.com/). For example, to generate an image of a desired width of 400px and a desired height of 300px and an `aquamarine` background, make a request to `https://everything-placeholder.herokuapp.com/image?width=400&height=300&color=aquamarine`. The following image is sent back as response.
+
+<img src="https://everything-placeholder.herokuapp.com/image?width=400&height=300&color=aquamarine" alt="image_example">
 
 A complete list of available endpoints is featured [here](#endpoints).
-
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
