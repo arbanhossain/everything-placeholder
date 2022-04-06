@@ -61,7 +61,7 @@
     </li>
       <li><a href="#endpoints">Endpoints</a>
       <ul>
-        <li><a href="#/images">/images</a>
+        <li><a href="#/image">/image</a>
         <li><a href="#/text">/text</a>
       </ul>
     </li>
@@ -104,7 +104,7 @@ A complete list of available endpoints is featured [here](#endpoints).
 
 ## Endpoints
 
-- ### /images
+- ### /image
 
 | Parameters  | Description |
 | ----------- | ----------- |
@@ -170,14 +170,6 @@ Project Link: [https://github.com/arbanhossain/everything-placeholder/](https://
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
