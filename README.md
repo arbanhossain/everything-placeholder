@@ -17,14 +17,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arbanhossain/everything-placeholder?color=green&label=commits)
+![GitHub](https://img.shields.io/github/license/arbanhossain/everything-placeholder)
+![GitHub Repo stars](https://img.shields.io/github/stars/arbanhossain/everything-placeholder)
+![GitHub contributors](https://img.shields.io/github/contributors/arbanhossain/everything-placeholder?color=green&label=people)
+![GitHub issues](https://img.shields.io/github/issues/arbanhossain/everything-placeholder)
+![GitHub top language](https://img.shields.io/github/languages/top/arbanhossain/everything-placeholder)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -79,14 +78,6 @@
 ## About The Project
 
 The project is aimed at assisting developers by giving them access to a wide variety of items to use as a placeholder so that they can worry about what matters the most - actually developing the software. As of April 2022, images and texts are available with a moderate amount of options for generating unique placeholders.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [Flask](https://flask.palletsprojects.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
