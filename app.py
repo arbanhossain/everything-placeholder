@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request, Response, jsonify, send_file
 from utils.image import get_image
 from utils.text import gen_text
+from utils.code import send_code
 from io import BytesIO
 
 app = Flask(__name__)
@@ -42,7 +43,12 @@ def text():
   words = request.args.get('words')
 
   if paragraphs is None: paragraphs = 1
-  return gen_text(LOREM, int(paragraphs), words)
+  return Response(gen_text(LOREM, int(paragraphs), words), mimetype='text/plain')
+
+@app.route("/code")
+def code():
+  lang = request.args.get('lang')
+  return Response(send_code(lang, 'utils/codes'), mimetype='text/plain')
 
 ### dunder main
 if __name__ == "__main__":
