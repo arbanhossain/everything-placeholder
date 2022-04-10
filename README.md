@@ -99,16 +99,20 @@ A complete list of available endpoints is featured [here](#endpoints).
 
 | Parameters  | Description |
 | ----------- | ----------- |
-| width | Desired width of the image, in pixels |
-| height | Desired height of the image, in pixels |
-| color | Desired color of the image, as CSS3-style color specifiers. Additional information is available [here](https://pillow.readthedocs.io/en/stable/reference/ImageColor.html) |
+| width | Desired width of the image, in pixels, defaults to `400` |
+| height | Desired height of the image, in pixels, defaults to `300` |
+| color | Desired color of the image, as CSS3-style color specifiers, defaults to `red`. Additional information is available [here](https://pillow.readthedocs.io/en/stable/reference/ImageColor.html) |
 
 - ### /text
 | Parameters  | Description |
 | ----------- | ----------- |
-| paragraphs | Desired number of paragraphs in the text. If used with `words`, will be ignored |
-| words | Desired number of words in the text. If used with `paragraphs`, this will take precedence. |
+| paragraphs | Desired number of paragraphs in the text. If used with `words`, will be ignored, defaults to `1` |
+| words | Desired number of words in the text. If used with `paragraphs`, this will take precedence, defaults to `None` |
 
+- ### /code
+| Parameters  | Description |
+| ----------- | ----------- |
+| lang | Desired language, defaults to `c` if not provided or provided language is not found |
 <!-- ROADMAP -->
 ## Roadmap
 
