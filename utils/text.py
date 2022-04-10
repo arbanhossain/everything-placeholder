@@ -12,3 +12,6 @@ def gen_text(src, paragraphs, words=None):
   for i in range(paragraphs - 1):
     src += '\n' + src
   return src
+
+if __name__ == "__main__":
+  pass
