@@ -128,6 +128,7 @@ A complete list of available endpoints is featured [here](#endpoints).
 - [ ] Video
 - [x] Code
     - [ ] Support multiple languages
+- [ ] Get a more capable server
 
 See the [open issues](https://github.com/arbanhossain/everything-placeholder/issues) for a full list of proposed features (and known issues).
 
