@@ -24,7 +24,7 @@ def serve_pil_image(pil_img):
 
 @app.route("/")
 def index():
-  return "Hello"
+  return render_template('index.html')
 
 
 @app.route("/image")

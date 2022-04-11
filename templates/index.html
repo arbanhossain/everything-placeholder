@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <title>Everything Placeholder</title>
+  <style>
+    body{
+      margin-top: 5%;
+      text-align: center;
+    }
+
+    a{
+      padding: 2%;
+    }
+
+    a.mega {
+      font-size: 1.5em;
+    }
+
+    .endpoints{
+      padding-top: 5%;
+    }
+  </style>
+</head>
+<body>
+  <img src="{{url_for('static', filename='logo.png')}}" alt="Logo" width="100px" />
+  <h2>Everything Placeholder</h2>
+  <p>Placeholders for anything and everything you need with zero local dependency.</p>
+  <a class="mega" href="https://github.com/arbanhossain/everything-placeholder#usage">Explore the docs »</a>
+  <a class="mega" href="https://github.com/arbanhossain/everything-placeholder">GitHub</a>
+  <div class="endpoints">
+    <a href="/image">/image</a>
+    <a href="/text">/text</a>
+    <a href="/audio">/audio</a>
+    <a href="/code">/code</a>
+  </div>
+</body>
+</html>
