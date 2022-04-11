@@ -3,7 +3,8 @@ from flask import Flask, render_template, request, Response, jsonify, send_file
 from utils.image import get_image
 from utils.text import gen_text
 from utils.code import send_code
-from io import BytesIO
+from utils.sound import generate_audio
+from io import BytesIO, StringIO
 
 app = Flask(__name__)
 
@@ -49,6 +50,18 @@ def text():
 def code():
   lang = request.args.get('lang')
   return Response(send_code(lang, 'utils/codes'), mimetype='text/plain')
+
+@app.route("/audio")
+def audio():
+  freq = request.args.get('freq')
+  duration = request.args.get('duration')
+  sample_rate = request.args.get('sample_rate')
+  volume = request.args.get('volume')
+  buf = BytesIO()
+  generate_audio(buf, duration, sample_rate, freq, volume)
+  buf.seek(0)
+
+  return Response(buf.getvalue(), mimetype='audio/wav')
 
 ### dunder main
 if __name__ == "__main__":
