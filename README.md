@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The project is aimed at assisting developers by giving them access to a wide variety of items to use as a placeholder so that they can worry about what matters the most - actually developing the software. As of April 2022, images and texts are available with a moderate amount of options for generating unique placeholders.
+The project is aimed at assisting developers by giving them access to a wide variety of items to use as a placeholder so that they can focus on actually developing their application. As of April 2022, **images**, **text**, **audio**, and **programming languages** are available with a moderate amount of options for generating unique placeholders.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -97,28 +97,36 @@ A complete list of available endpoints is featured [here](#endpoints).
 
 - ### /image
 
-| Parameters  | Description |
-| ----------- | ----------- |
-| width | Desired width of the image, in pixels, defaults to `400` |
-| height | Desired height of the image, in pixels, defaults to `300` |
-| color | Desired color of the image, as CSS3-style color specifiers, defaults to `red`. Additional information is available [here](https://pillow.readthedocs.io/en/stable/reference/ImageColor.html) |
+| Parameters  | Type | Description |
+| ----------- | -----| ----------- |
+| width | `int` | Desired width of the image, in pixels, defaults to `400` |
+| height | `int` | Desired height of the image, in pixels, defaults to `300` |
+| color | `CSS3-style color specifier` | Desired color of the image, defaults to `red`. Additional information is available [here](https://pillow.readthedocs.io/en/stable/reference/ImageColor.html) |
 
 - ### /text
-| Parameters  | Description |
-| ----------- | ----------- |
-| paragraphs | Desired number of paragraphs in the text. If used with `words`, will be ignored, defaults to `1` |
-| words | Desired number of words in the text. If used with `paragraphs`, this will take precedence, defaults to `None` |
+| Parameters  | Type | Description |
+| ----------- | -----| ----------- |
+| paragraphs | `int` | Desired number of paragraphs in the text. If used with `words`, will be ignored, defaults to `1` |
+| words | `int` | Desired number of words in the text. If used with `paragraphs`, this will take precedence, defaults to `None` |
+
+- ### /audio
+| Parameters  | Type | Description |
+| ----------- | -----| ----------- |
+| duration | `int` | Desired duration of the audio track, **in milliseconds**, Max. 10 seconds, defaults to 1 second |
+| sample_rate | `int` | Desired sample rate of the audio track, defaults to 44100 |
+| frequency | `int` | Desired frequncy of the generated audio track, defaults to 440 |
+| volume | `int` | Desired volume of the audio track, on a scale of 1-10 defaults to 10 |
 
 - ### /code
-| Parameters  | Description |
-| ----------- | ----------- |
-| lang | Desired language, defaults to `c` if not provided or provided language is not found |
+| Parameters  | Type | Description |
+| ----------- | -----| ----------- |
+| lang | `string` | Desired language, defaults to `c` if not provided or provided language is not found |
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Audio
+- [x] Audio
 - [ ] Video
-- [ ] Code
+- [x] Code
     - [ ] Support multiple languages
 
 See the [open issues](https://github.com/arbanhossain/everything-placeholder/issues) for a full list of proposed features (and known issues).
