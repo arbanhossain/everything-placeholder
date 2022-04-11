@@ -61,7 +61,10 @@ def audio():
   generate_audio(buf, duration, sample_rate, freq, volume)
   buf.seek(0)
 
-  return Response(buf.getvalue(), mimetype='audio/wav')
+  val = buf.getvalue()
+  buf.close()
+
+  return Response(val, mimetype='audio/wav')
 
 ### dunder main
 if __name__ == "__main__":
